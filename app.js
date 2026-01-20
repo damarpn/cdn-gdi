@@ -343,7 +343,7 @@ function list(path, id = '', fallback = false) {
     var navarray = navfulllink.trim('/').split('/');
     var currentPath = '/';
 
-    if (navarray.length > 1) {
+    if (navarray.length > 0) {
         for (var i in navarray) {
             var pathPart = navarray[i];
             var decodedPathPart = decodeURIComponent(pathPart).replace(/\//g, '%2F');
