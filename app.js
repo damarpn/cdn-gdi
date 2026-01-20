@@ -1593,7 +1593,7 @@ function file_audio(name, encoded_name, size, url, file_id, cookie_folder_id) {
         <div class="text-center">
           <div class="${UI.file_view_alert_class}" id="file_details" role="alert">${name}<br>${size}</div>
           ${UI.disable_player ? `` : `
-          <video id="aplayer" poster="${UI.audioposter}" muted=true class="video-js vjs-default-skin" controls preload="auto" width="100%" height="100%" data-setup='{"fluid": true}' style="--plyr-captions-text-color: #ffffff;--plyr-captions-background: #000000;">
+          <video id="aplayer" poster="${UI.audioposter}" class="video-js vjs-default-skin" controls preload="auto" width="100%" height="100%" data-setup='{"fluid": true}' style="--plyr-captions-text-color: #ffffff;--plyr-captions-background: #000000;">
             <source src="${url}" type="audio/mpeg" />
             <source src="${url}" type="audio/ogg" />
             <source src="${url}" type="audio/wav" />
