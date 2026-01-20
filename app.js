@@ -1286,6 +1286,9 @@ function file_others(name, encoded_name, size, url, file_id, cookie_folder_id) {
             </div>
             <div class="card-body">
             <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="">Full URL</span>
+                </div>
               <input type="text" class="form-control" id="dlurl" value="${url}" readonly>
             </div>
             <div class="card-text text-center">
@@ -1360,6 +1363,9 @@ function file_code(name, encoded_name, size, bytes, url, ext, file_id, cookie_fo
         (UI.second_domain_for_dl ? `` : `<pre class="line-numbers language-markup" data-src="plugins/line-numbers/index.html" data-start="-5" style="white-space: pre-wrap; counter-reset: linenumber -6;" data-src-status="loaded" tabindex="0"><code id="editor"></code></pre>`) +
         `<div class="card-body">
           <div class="input-group mb-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Full URL</span>
+            </div>
             <input type="text" class="form-control" id="dlurl" value="${url}" readonly>
           </div>
           <div class="card-text text-center">
@@ -1607,7 +1613,10 @@ function file_audio(name, encoded_name, size, url, file_id, cookie_folder_id) {
         ${UI.disable_audio_download ? `` : `
           <div class="card-body">
           <div class="input-group mb-4">
-          <input type="text" class="form-control" id="dlurl" value="${url}" readonly>
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Full URL</span>
+            </div>
+            <input type="text" class="form-control" id="dlurl" value="${url}" readonly>
           </div>
           <div class="btn-group text-center">
               <a href="${url}" type="button" class="btn btn-primary">Download</a>
@@ -1699,7 +1708,10 @@ function file_pdf(name, encoded_name, size, url, file_id, cookie_folder_id) {
     </div>
     <div class="card-body">
     <div class="input-group mb-4">
-    <input type="text" class="form-control" id="dlurl" value="${url}" readonly>
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Full URL</span>
+            </div>
+            <input type="text" class="form-control" id="dlurl" value="${url}" readonly>
     </div>
     <div class="card-text text-center">
     <div class="btn-group text-center">
