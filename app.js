@@ -337,7 +337,7 @@ function list(path, id = '', fallback = false) {
     <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0; padding-bottom: 0rem;">
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb" id="folderne">
-          <li class="breadcrumb-item"><a href="/">Home</a></li>`;
+          <li class="breadcrumb-item"><a href="/">🏠 Home</a></li>`;
 
     var navfulllink = window.location.pathname;
     var navarray = navfulllink.trim('/').split('/');
@@ -1267,7 +1267,7 @@ function file_others(name, encoded_name, size, url, file_id, cookie_folder_id) {
             part = part.substring(0, 10) + '...';
         }
         if (part == '') {
-            part = 'Home'
+            part = '🏠 Home'
         }
         navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
@@ -1339,7 +1339,7 @@ function file_code(name, encoded_name, size, bytes, url, ext, file_id, cookie_fo
             part = part.substring(0, 10) + '...';
         }
         if (part == '') {
-            part = 'Home'
+            part = '🏠 Home'
         }
         navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
@@ -1423,7 +1423,7 @@ function file_video(name, encoded_name, size, poster, url, mimeType, file_id, co
             part = part.substring(0, 10) + '...';
         }
         if (part == '') {
-            part = 'Home'
+            part = '🏠 Home'
         }
         navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
@@ -1580,7 +1580,7 @@ function file_audio(name, encoded_name, size, url, file_id, cookie_folder_id) {
             part = part.substring(0, 10) + '...';
         }
         if (part == '') {
-            part = 'Home'
+            part = '🏠 Home'
         }
         navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
@@ -1677,7 +1677,7 @@ function file_pdf(name, encoded_name, size, url, file_id, cookie_folder_id) {
             part = part.substring(0, 10) + '...';
         }
         if (part == '') {
-            part = 'Home'
+            part = '🏠 Home'
         }
         navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
@@ -1745,7 +1745,7 @@ function file_image(name, encoded_name, size, url, file_id, cookie_folder_id) {
             part = part.substring(0, 10) + '...';
         }
         if (part == '') {
-            part = 'Home'
+            part = '🏠 Home'
         }
         navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
