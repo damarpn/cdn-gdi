@@ -1253,10 +1253,12 @@ function file_others(name, encoded_name, size, url, file_id, cookie_folder_id) {
     // Generate the navigation based on path parts
     var navigation = '';
     var new_path = '';
+    var disable_click = '';
     for (var i = 0; i < pathParts.length; i++) {
         var part = pathParts[i];
         if (i == pathParts.length - 1) {
             new_path += part + '?a=view'
+            disable_click = ' onclick ="return false;" ';
         } else {
             new_path += part + '/'
         }
@@ -1267,7 +1269,7 @@ function file_others(name, encoded_name, size, url, file_id, cookie_folder_id) {
         if (part == '') {
             part = 'Home'
         }
-        navigation += '<a href="' + new_path + '" class="breadcrumb-item">' + part + '</a>';
+        navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
 
     // Add the container and card elements
@@ -1323,10 +1325,12 @@ function file_code(name, encoded_name, size, bytes, url, ext, file_id, cookie_fo
     // Generate the navigation based on path parts
     var navigation = '';
     var new_path = '';
+    var disable_click = '';
     for (var i = 0; i < pathParts.length; i++) {
         var part = pathParts[i];
         if (i == pathParts.length - 1) {
             new_path += part + '?a=view'
+            disable_click = ' onclick ="return false;" ';
         } else {
             new_path += part + '/'
         }
@@ -1337,7 +1341,7 @@ function file_code(name, encoded_name, size, bytes, url, ext, file_id, cookie_fo
         if (part == '') {
             part = 'Home'
         }
-        navigation += '<a href="' + new_path + '" class="breadcrumb-item">' + part + '</a>';
+        navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
 
     // Add the container and card elements
@@ -1405,10 +1409,12 @@ function file_video(name, encoded_name, size, poster, url, mimeType, file_id, co
     // Generate the navigation based on path parts
     var navigation = '';
     var new_path = '';
+    var disable_click = '';
     for (var i = 0; i < pathParts.length; i++) {
         var part = pathParts[i];
         if (i == pathParts.length - 1) {
             new_path += part + '?a=view'
+            disable_click = ' onclick ="return false;" ';
         } else {
             new_path += part + '/'
         }
@@ -1419,7 +1425,7 @@ function file_video(name, encoded_name, size, poster, url, mimeType, file_id, co
         if (part == '') {
             part = 'Home'
         }
-        navigation += '<a href="' + new_path + '" class="breadcrumb-item">' + part + '</a>';
+        navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
     let player
     if (!UI.disable_player) {
@@ -1556,10 +1562,12 @@ function file_audio(name, encoded_name, size, url, file_id, cookie_folder_id) {
     // Generate the navigation based on path parts
     var navigation = '';
     var new_path = '';
+    var disable_click = '';
     for (var i = 0; i < pathParts.length; i++) {
         var part = pathParts[i];
         if (i == pathParts.length - 1) {
             new_path += part + '?a=view'
+            disable_click = ' onclick ="return false;" ';
         } else {
             new_path += part + '/'
         }
@@ -1570,7 +1578,7 @@ function file_audio(name, encoded_name, size, url, file_id, cookie_folder_id) {
         if (part == '') {
             part = 'Home'
         }
-        navigation += '<a href="' + new_path + '" class="breadcrumb-item">' + part + '</a>';
+        navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
 
     // Add the container and card elements
@@ -1651,10 +1659,12 @@ function file_pdf(name, encoded_name, size, url, file_id, cookie_folder_id) {
     // Generate the navigation based on path parts
     var navigation = '';
     var new_path = '';
+    var disable_click = '';
     for (var i = 0; i < pathParts.length; i++) {
         var part = pathParts[i];
         if (i == pathParts.length - 1) {
             new_path += part + '?a=view'
+            disable_click = ' onclick ="return false;" ';
         } else {
             new_path += part + '/'
         }
@@ -1665,7 +1675,7 @@ function file_pdf(name, encoded_name, size, url, file_id, cookie_folder_id) {
         if (part == '') {
             part = 'Home'
         }
-        navigation += '<a href="' + new_path + '" class="breadcrumb-item">' + part + '</a>';
+        navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
 
     // Add the container and card elements
@@ -1717,10 +1727,12 @@ function file_image(name, encoded_name, size, url, file_id, cookie_folder_id) {
     // Generate the navigation based on path parts
     var navigation = '';
     var new_path = '';
+    var disable_click = '';
     for (var i = 0; i < pathParts.length; i++) {
         var part = pathParts[i];
         if (i == pathParts.length - 1) {
             new_path += part + '?a=view'
+            disable_click = ' onclick ="return false;" ';
         } else {
             new_path += part + '/'
         }
@@ -1731,7 +1743,7 @@ function file_image(name, encoded_name, size, url, file_id, cookie_folder_id) {
         if (part == '') {
             part = 'Home'
         }
-        navigation += '<a href="' + new_path + '" class="breadcrumb-item">' + part + '</a>';
+        navigation += '<a href="' + new_path + '" class="breadcrumb-item"' + disable_click + '>' + part + '</a>';
     }
 
     // Add the container and card elements // wait until image is loaded and then hide spinner
