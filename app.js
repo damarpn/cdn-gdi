@@ -335,7 +335,7 @@ function list(path, id = '', fallback = false) {
       </div>
     </div>
     <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0; padding-bottom: 0rem;">
-      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
         <ol class="breadcrumb" id="folderne">
           <li class="breadcrumb-item"><a href="/">🏠 Home</a></li>`;
 
@@ -1489,12 +1489,16 @@ function file_video(name, encoded_name, size, poster, url, mimeType, file_id, co
               <a class="dropdown-item" href="iina://weblink?url=${url}">IINA</a>
               <a class="dropdown-item" href="potplayer://${url}">PotPlayer</a>
               <a class="dropdown-item" href="vlc://${url}">VLC Mobile</a>
-              <a class="dropdown-item" href="${url}">VLC Desktop</a>
+              <a class="dropdown-item" href="vlc://${url}">VLC Desktop</a>
               <a class="dropdown-item" href="nplayer-${url}">nPlayer</a>
-              <a class="dropdown-item" href="intent://${url}#Intent;type=video/any;package=is.xyz.mpv;scheme=https;end;">mpv-android</a>
+              <a class="dropdown-item" href="intent:${url}#Intent;type=video/mp4;package=com.google.android.apps.photos;end">Google Photos</a>
+              <a class="dropdown-item" href="intent:${url}#Intent;type=video/mp4;package=com.brouken.player;S.title=${encoded_name};end">Just Player</a>
+              <a class="dropdown-item" href="intent:${url}#Intent;type=video/any;package=is.xyz.mpv;end;">mpv-android</a>
+              <a class="dropdown-item" href="intent:${url}#Intent;type=video/any;package=live.mehiz.mpvkt;end;">mpvKt</a>
               <a class="dropdown-item" href="mpv://${url_base64}">mpv x64</a>
-              <a class="dropdown-item" href="intent:${url}#Intent;package=com.mxtech.videoplayer.ad;S.title=${encoded_name};end">MX Player (Free)</a>
-              <a class="dropdown-item" href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;S.title=${encoded_name};end">MX Player (Pro)</a>
+              <a class="dropdown-item" href="intent:${url}#Intent;type=video/mp4;package=com.miui.videoplayer;S.title=${encoded_name};end;">Mi Video</a>
+              <a class="dropdown-item" href="intent:${url}#Intent;type=video/any;package=com.mxtech.videoplayer.ad;S.title=${encoded_name};end">MX Player (Free)</a>
+              <a class="dropdown-item" href="intent:${url}#Intent;type=video/any;package=com.mxtech.videoplayer.pro;S.title=${encoded_name};end">MX Player (Pro)</a>
               <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager/idm.internet.download.manager.Downloader;S.title=${encoded_name};end">1DM (Free)</a>
               <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager.adm.lite/idm.internet.download.manager.Downloader;S.title=${encoded_name};end">1DM (Lite)</a>
               <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager.plus/idm.internet.download.manager.Downloader;S.title=${encoded_name};end">1DM+ (Plus)</a>
