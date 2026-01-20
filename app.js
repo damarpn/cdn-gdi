@@ -1511,11 +1511,15 @@ function file_video(name, encoded_name, size, poster, url, mimeType, file_id, co
         } else if (player_config.player == "dplayer") {
             const dp = new DPlayer({
                 container: document.getElementById('player-container'),
+                volume: 1,
                 screenshot: true,
+                airplay : true,
+                chromecast : true,
+                hotkey : true,
                 video: {
                     url: url,
                     pic: poster,
-                    thumbnails: poster,
+                    //thumbnails: poster,
                 },
             });
         } else if (player_config.player == "jwplayer") {
