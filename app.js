@@ -356,8 +356,11 @@ function list(path, id = '', fallback = false) {
             if (displayedPathPart === '') {
                 break;
             }
-
-            containerContent += `<li class="breadcrumb-item"><a href="${currentPath}">${displayedPathPart}</a></li>`;
+            if (navfulllink === currentPath) {
+                containerContent += `<li class="breadcrumb-item"><a href="${currentPath}" onclick="return false;">${displayedPathPart}</a></li>`;
+            }else{
+                containerContent += `<li class="breadcrumb-item"><a href="${currentPath}">${displayedPathPart}</a></li>`;
+            }
         }
     }
 
