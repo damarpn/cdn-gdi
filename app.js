@@ -1525,13 +1525,13 @@ function file_video(name, encoded_name, size, poster, url, mimeType, file_id, co
             const dp = new DPlayer({
                 container: document.getElementById('player-container'),
                 volume: 1,
-                screenshot: true,
+                screenshot: false,
                 airplay : true,
                 chromecast : true,
                 hotkey : true,
                 video: {
                     url: url,
-                    pic: poster,
+                    pic: 'https://serveproxy.com/?url=' + poster,
                     //thumbnails: poster,
                 },
             });
