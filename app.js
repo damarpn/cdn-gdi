@@ -1146,7 +1146,7 @@ async function fallback(id, type) {
                     } else if (mimeType.includes("pdf") || pdf.includes(fileExtension)) {
                         file_pdf(name, encoded_name, size, url, file_id, cookie_folder_id);
                     } else if (code.includes(fileExtension)) {
-                        file_code(name, encoded_name, size, url, file_id, cookie_folder_id);
+                        file_code(name, encoded_name, size, obj.size, url, fileExtension, file_id, cookie_folder_id);
                     } else {
                         file_others(name, encoded_name, size, url, file_id, cookie_folder_id);
                     }
@@ -1221,7 +1221,7 @@ async function file(path) {
                 } else if (mimeType.includes("pdf") || pdf.includes(fileExtension)) {
                     file_pdf(name, encoded_name, size, url, file_id, cookie_folder_id);
                 } else if (code.includes(fileExtension)) {
-                    file_code(name, encoded_name, size, url, file_id, cookie_folder_id);
+                    file_code(name, encoded_name, size, obj.size, url, fileExtension, file_id, cookie_folder_id);
                 } else {
                     file_others(name, encoded_name, size, url, file_id, cookie_folder_id);
                 }
